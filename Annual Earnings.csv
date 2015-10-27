@@ -1,0 +1,103 @@
+"Annual Earnings and Other Labour Costs for All Employees by Industry"
+"Sector NACE Rev 2, statistical indicator and Year"
+
+" "," ","2008","2009","2010","2011","2012","2013","2014"
+"All NACE economic sectors"
+" ","Regular Earnings (Euro Thousand)",59013450,55092122,51879764,50809735,51147674,51969358,53217805
+" ","Overtime Earnings (Euro Thousand)",2118669,1581997,1494432,1478620,1424374,1399944,1455118
+" ","Irregular Earnings (Euro Thousand)",3374254,2610511,2633977,2586319,2748409,2750004,3032487
+" ","Total Wages and Salaries (Euro Thousand)",64506373,59284630,56008173,54874675,55320456,56119306,57705409
+" ","Other Labour Costs (Euro Thousand)",10399508,9605811,7923700,7443338,8559203,8775812,8915745
+" ","Total Labour Costs (Euro Thousand)",74905881,68890441,63931874,62318013,63879659,64895118,66621154
+"Construction (F)"
+" ","Regular Earnings (Euro Thousand)",5188740,3590338,2365743,2244917,2022552,2012104,2367996
+" ","Overtime Earnings (Euro Thousand)",240420,135677,93439,95469,90098,92477,119065
+" ","Irregular Earnings (Euro Thousand)",112636,81952,64042,29034,43674,40600,66214
+" ","Total Wages and Salaries (Euro Thousand)",5541796,3807966,2523224,2369420,2156324,2145182,2553275
+" ","Other Labour Costs (Euro Thousand)",1010013,705484,365072,297895,274738,267958,330669
+" ","Total Labour Costs (Euro Thousand)",6551809,4513451,2888296,2667315,2431062,2413139,2883944
+"Wholesale and retail trade; repair of motor vehicles and motorcycles (G)"
+" ","Regular Earnings (Euro Thousand)",7875421,7052455,6741580,6800878,6999783,7126521,7123681
+" ","Overtime Earnings (Euro Thousand)",218642,164718,157559,158422,152092,158047,154106
+" ","Irregular Earnings (Euro Thousand)",370149,274356,298560,327154,357596,373020,405280
+" ","Total Wages and Salaries (Euro Thousand)",8464212,7491529,7197700,7286454,7509470,7657587,7683066
+" ","Other Labour Costs (Euro Thousand)",1441260,1202262,1065839,1026442,1189813,1149596,1216506
+" ","Total Labour Costs (Euro Thousand)",9905472,8693791,8263538,8312896,8699283,8807184,8899572
+"Transportation and storage (H)"
+" ","Regular Earnings (Euro Thousand)",2476926,2246120,2177700,2209742,2129449,2167249,2174980
+" ","Overtime Earnings (Euro Thousand)",167060,110485,97121,89804,80264,77582,89023
+" ","Irregular Earnings (Euro Thousand)",141158,111083,109165,132507,162176,146471,131340
+" ","Total Wages and Salaries (Euro Thousand)",2785144,2467687,2383986,2432053,2371889,2391302,2395343
+" ","Other Labour Costs (Euro Thousand)",507828,486129,430939,423088,500939,451015,424232
+" ","Total Labour Costs (Euro Thousand)",3292972,2953817,2814925,2855141,2872828,2842317,2819575
+"Accommodation and food service activities (I)"
+" ","Regular Earnings (Euro Thousand)",2650079,2191676,2086060,1926299,1993193,2194058,2515441
+" ","Overtime Earnings (Euro Thousand)",33371,30732,30452,30534,32586,36812,38263
+" ","Irregular Earnings (Euro Thousand)",33061,29247,26911,25109,33080,36274,43544
+" ","Total Wages and Salaries (Euro Thousand)",2716510,2251656,2143422,1981942,2058859,2267143,2597248
+" ","Other Labour Costs (Euro Thousand)",338822,261684,216841,185138,188533,207575,275441
+" ","Total Labour Costs (Euro Thousand)",3055333,2513339,2360263,2167080,2247392,2474718,2872689
+"Information and communication (J)"
+" ","Regular Earnings (Euro Thousand)",2817074,2437250,2354491,2388305,2665200,2739264,2807593
+" ","Overtime Earnings (Euro Thousand)",46506,30583,27324,26076,30451,29732,34653
+" ","Irregular Earnings (Euro Thousand)",242957,174953,183716,200590,263609,284763,315773
+" ","Total Wages and Salaries (Euro Thousand)",3106537,2642786,2565531,2614971,2959260,3053760,3158019
+" ","Other Labour Costs (Euro Thousand)",667240,565817,518644,521928,620552,813712,691602
+" ","Total Labour Costs (Euro Thousand)",3773777,3208603,3084176,3136899,3579811,3867472,3849621
+"Professional, scientific and technical activities (M)"
+" ","Regular Earnings (Euro Thousand)",3308170,2981757,2718495,2679907,2790549,3105378,3209147
+" ","Overtime Earnings (Euro Thousand)",28544,19607,18016,20536,15655,20367,23000
+" ","Irregular Earnings (Euro Thousand)",143290,116786,138103,137978,172312,146544,185973
+" ","Total Wages and Salaries (Euro Thousand)",3480003,3118149,2874615,2838420,2978515,3272289,3418121
+" ","Other Labour Costs (Euro Thousand)",707270,564335,440284,440375,488609,547982,531576
+" ","Total Labour Costs (Euro Thousand)",4187274,3682484,3314899,3278795,3467124,3820271,3949698
+"Administrative and support service activities (N)"
+" ","Regular Earnings (Euro Thousand)",2141019,2132464,2055974,1837791,2013284,2098927,2356915
+" ","Overtime Earnings (Euro Thousand)",79902,58481,45456,40720,52898,43311,41160
+" ","Irregular Earnings (Euro Thousand)",86021,85617,84803,110208,111407,124601,136015
+" ","Total Wages and Salaries (Euro Thousand)",2306942,2276561,2186233,1988718,2177590,2266839,2534090
+" ","Other Labour Costs (Euro Thousand)",374191,338717,282954,233251,299791,321240,348779
+" ","Total Labour Costs (Euro Thousand)",2681133,2615279,2469188,2221970,2477381,2588079,2882869
+"Public administration and defence; compulsory social security (O)"
+" ","Regular Earnings (Euro Thousand)",5351317,5692953,5304835,4927005,5027588,4854086,4902592
+" ","Overtime Earnings (Euro Thousand)",272863,190336,194717,182770,143798,136394,125608
+" ","Irregular Earnings (Euro Thousand)",423828,303890,274416,259502,235791,226635,235137
+" ","Total Wages and Salaries (Euro Thousand)",6048008,6187179,5773968,5369278,5407178,5217115,5263337
+" ","Other Labour Costs (Euro Thousand)",472375,452619,376949,350727,414068,411794,432747
+" ","Total Labour Costs (Euro Thousand)",6520383,6639798,6150917,5720005,5821246,5628910,5696084
+"Education (P)"
+" ","Regular Earnings (Euro Thousand)",5833094,5904530,5803110,5720567,5481298,5460537,5539657
+" ","Overtime Earnings (Euro Thousand)",31229,16178,24588,44621,45988,37950,29367
+" ","Irregular Earnings (Euro Thousand)",143814,126164,152199,153491,158170,142824,68466
+" ","Total Wages and Salaries (Euro Thousand)",6008136,6046872,5979897,5918679,5685455,5641310,5637489
+" ","Other Labour Costs (Euro Thousand)",506470,484777,452510,473910,560460,564988,574889
+" ","Total Labour Costs (Euro Thousand)",6514606,6531649,6432407,6392589,6245915,6206298,6212378
+"Human health and social work activities (Q)"
+" ","Regular Earnings (Euro Thousand)",7183636,7553608,7416466,7413067,7409194,7424553,7320642
+" ","Overtime Earnings (Euro Thousand)",386808,358525,341263,320109,307975,268104,249904
+" ","Irregular Earnings (Euro Thousand)",404851,421121,406925,390221,385270,370455,337018
+" ","Total Wages and Salaries (Euro Thousand)",7975296,8333253,8164653,8123396,8102439,8063111,7907564
+" ","Other Labour Costs (Euro Thousand)",887566,945456,777915,711617,835612,822261,847240
+" ","Total Labour Costs (Euro Thousand)",8862861,9278709,8942569,8835013,8938051,8885372,8754804
+"Industry (B to E)"
+" ","Regular Earnings (Euro Thousand)",8521789,7871733,7582792,7427302,7340971,7585557,7744306
+" ","Overtime Earnings (Euro Thousand)",512232,392493,393411,391559,391095,425596,478500
+" ","Irregular Earnings (Euro Thousand)",536804,504910,499990,457967,491393,482360,593552
+" ","Total Wages and Salaries (Euro Thousand)",9570825,8769136,8476192,8276828,8223458,8493514,8816357
+" ","Other Labour Costs (Euro Thousand)",2010960,2060864,1729077,1611485,1854195,1867197,1904825
+" ","Total Labour Costs (Euro Thousand)",11581786,10830000,10205269,9888313,10077653,10360711,10721182
+"Financial, insurance and real estate activities (K,L)"
+" ","Regular Earnings (Euro Thousand)",4367226,4302546,4171680,4145002,4163310,4067838,4109243
+" ","Overtime Earnings (Euro Thousand)",67951,48293,45265,54656,63162,58163,57056
+" ","Irregular Earnings (Euro Thousand)",694596,347053,358782,337204,298445,334647,476579
+" ","Total Wages and Salaries (Euro Thousand)",5129773,4697892,4575727,4536861,4524917,4460647,4642878
+" ","Other Labour Costs (Euro Thousand)",1279082,1358389,1124008,1015859,1167800,1168205,1166381
+" ","Total Labour Costs (Euro Thousand)",6408855,6056281,5699734,5552720,5692717,5628853,5809259
+"Arts, entertainment, recreation and other service activities (R,S)"
+" ","Regular Earnings (Euro Thousand)",1298961,1134693,1100838,1088954,1111302,1133287,1045611
+" ","Overtime Earnings (Euro Thousand)",33141,25892,25820,23346,18313,15410,15414
+" ","Irregular Earnings (Euro Thousand)",41089,33379,36366,25355,35486,40810,37596
+" ","Total Wages and Salaries (Euro Thousand)",1373192,1193964,1163024,1137655,1165101,1189507,1098621
+" ","Other Labour Costs (Euro Thousand)",196430,179278,142670,151622,164095,182287,170858
+" ","Total Labour Costs (Euro Thousand)",1569622,1373242,1305694,1289277,1329196,1371794,1269479
+
