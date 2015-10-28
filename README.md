@@ -2,7 +2,7 @@
 ***Eoghan Moylan***
 
 ###Plan
-The user will be able 
+The user will be able to compare the number of crimes based on year and garda station and the earnings for all employees in different sectors. Both datasets are ordered by year.
 
 ### Datasets used:
 *EHA04: Annual Earnings and Other Labour Costs for All Employees by Industry Sector NACE Rev 2, Year and Statistic*
