@@ -1,10 +1,10 @@
 # Linked-Data
 ***Eoghan Moylan***
 
-##Plan
+###Plan
 The user will be able 
 
-## Datasets used:
+### Datasets used:
 *EHA04: Annual Earnings and Other Labour Costs for All Employees by Industry Sector NACE Rev 2, Year and Statistic*
 http://www.cso.ie/px/pxeirestat/Database/eirestat/EHECS%20Earnings%20Hours%20and%20Employment%20Costs%20Survey%20Annual/EHECS%20Earnings%20Hours%20and%20Employment%20Costs%20Survey%20Annual_statbank.asp?SP=EHECS%20Earnings%20Hours%20and%20Employment%20Costs%20Survey%20Annual&Planguage=0
 
