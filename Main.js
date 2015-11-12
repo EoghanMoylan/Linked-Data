@@ -6,9 +6,16 @@ var fs = require('fs');
 //Reads in JSON file
 var crimes = JSON.parse(fs.readFileSync('CrimeRates.json','utf8'));
 var earnings = JSON.parse(fs.readFileSync('AnnualEarns.json','utf8'));
+
+var bodyParser = require('body-parser');
 //declare up DB with SQLite3
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database(':memory:');
+
+
+app.use(bodyParser.json()); // allow app to use JSON 
+app.use(bodyParser.urlencoded({ extended: true }));
+
 
 //Database Set up begins
 db.serialize(function() 
@@ -36,13 +43,40 @@ db.serialize(function()
         console.log(fill.EarningType, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Y2014);
       });
     stmt.finalize();
+    //ytemp
+        db.all("SELECT * FROM annualEarnings", function(err,row)
+        {
+            var rowString = JSON.stringify(row, null, '\t');
+            console.log(rowString);
+        });
   });
-db.close();
+
 //Set up default page for site..
 app.get('/', function(req, res)
 {
   res.send("Welcome To the crime vs earnings API");
 });
 
+//set up years page
+app.get('/annualEarningsYear/:yearStr', function (req, res)
+{
+    db.all("SELECT Y"+req.params.yearStr+" FROM annualEarnings", function(err,row)
+    {
+        var rowString = JSON.stringify(row, null, '\t');
+        res.send(rowString);
+        console.log(rowString);
+    });
+});
+app.get('/GardaStation/:crimeArea', function (req, res)
+{
+    db.all("SELECT Crime, (Y2008 + Y2009 + Y2010 + Y2011 +Y2012 + Y2013) AS numberofattempts, GardaStation FROM crimeRates WHERE GardaStation LIKE %"+ req.params.crimeArea+"% " , function(err,row)
+    {
+        var rowString2 = JSON.stringify(row, null, '\t');
+        res.send(rowString2);
+        console.log(req.params.crimeArea);
+    });
+});
 // Start the server.
 var server = app.listen(8000);
+
+//db.close();
