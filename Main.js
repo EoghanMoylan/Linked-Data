@@ -63,16 +63,16 @@ app.get('/annualEarningsYear/:yearStr', function (req, res)
     db.all("SELECT Y"+req.params.yearStr+" FROM annualEarnings", function(err,row)
     {
         var rowString = JSON.stringify(row, null, '\t');
-        res.send(rowString);
+        res.sendStatus(rowString);
         console.log(rowString);
     });
 });
 app.get('/GardaStation/:crimeArea', function (req, res)
 {
-    db.all("SELECT Crime, (Y2008 + Y2009 + Y2010 + Y2011 +Y2012 + Y2013) AS numberofattempts, GardaStation FROM crimeRates WHERE GardaStation LIKE %"+ req.params.crimeArea+"% " , function(err,row)
+    db.all("SELECT Crime, (Y2008 + Y2009 + Y2010 + Y2011 +Y2012 + Y2013) AS numberofattempts, GardaStation FROM crimeRates WHERE GardaStation LIKE \"%"+ req.params.crimeArea+"%\" ", function(err,row)
     {
         var rowString2 = JSON.stringify(row, null, '\t');
-        res.send(rowString2);
+        res.sendStatus(rowString2);
         console.log(req.params.crimeArea);
     });
 });
