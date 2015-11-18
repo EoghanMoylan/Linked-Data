@@ -78,9 +78,21 @@ app.get('/GardaStation/:crimeArea', function (req, res)
     });
 });
 //crime rates and total earnings by area and sector
-app.get('/compare/:sector/:crimeArea', function (req, res)
+app.get('/compareSectorAndStation/:sector/:crimeArea', function (req, res)
 {
     db.all("SELECT crimeRates.Crime as Crimes, (crimeRates.Y2008 + crimeRates.Y2009 + crimeRates.Y2010 + crimeRates.Y2011 +crimeRates.Y2012 + crimeRates.Y2013) AS numberofattempts, (annualEarnings.Y2008 + annualEarnings.Y2009 + annualEarnings.Y2010 + annualEarnings.Y2011 +annualEarnings.Y2012 + annualEarnings.Y2013) AS sumOfEarnings, crimeRates.GardaStation as GardaStations, annualEarnings.Sector as Sector FROM crimeRates LEFT JOIN annualEarnings WHERE crimeRates.GardaStation LIKE \"%"+req.params.crimeArea+"%\" AND annualEarnings.Sector LIKE \"%"+req.params.sector+"%\" ", function(err,row)
+    {
+        var rowString2 = JSON.stringify(row, null, '\t');
+        res.sendStatus(rowString2);
+        console.log(req.params.crimeArea);
+        console.log(req.params.sector);
+        
+    });
+});
+//join by year, sector and station
+app.get('/compareSectorAndStation/:sector/:crimeArea/:yearStr', function (req, res)
+{
+    db.all("SELECT crimeRates.Crime as Crimes, crimeRates.Y"+req.params.yearStr+" AS numberofattempts, annualEarnings.Y"+req.params.yearStr+" AS sumOfEarnings, crimeRates.GardaStation as GardaStations, annualEarnings.Sector as Sector FROM crimeRates LEFT JOIN annualEarnings WHERE crimeRates.GardaStation LIKE \"%"+req.params.crimeArea+"%\" AND annualEarnings.Sector LIKE \"%"+req.params.sector+"%\" ", function(err,row)
     {
         var rowString2 = JSON.stringify(row, null, '\t');
         res.sendStatus(rowString2);
