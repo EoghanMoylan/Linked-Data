@@ -31,7 +31,7 @@ db.serialize(function()
       crimes.forEach(function (fill)
       {
         stmt.run(fill.GardaStation, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Crime);
-        console.log(fill.GardaStation, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Crime);
+        //console.log(fill.GardaStation, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Crime);
       });
     stmt.finalize();
     
@@ -40,15 +40,10 @@ db.serialize(function()
       earnings.forEach(function(fill)
       {
         stmt.run(fill.EarningType, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Y2014, fill.Sector);
-        console.log(fill.EarningType, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Y2014, fill.Sector);
+        //console.log(fill.EarningType, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Y2014, fill.Sector);
       });
     stmt.finalize();
     //ytemp
-        db.all("SELECT * FROM annualEarnings", function(err,row)
-        {
-            var rowString = JSON.stringify(row, null, '\t');
-            console.log(rowString);
-        });
   });
 
 //Set up default page for site..
@@ -64,7 +59,6 @@ app.get('/annualEarningsYear/:yearStr', function (req, res)
     {
         var rowString = JSON.stringify(row, null, '\t');
         res.sendStatus(rowString);
-        console.log(rowString);
     });
 });
 //returns sum of crime attempts based on parameters entered
@@ -74,7 +68,6 @@ app.get('/GardaStation/:crimeArea', function (req, res)
     {
         var rowString2 = JSON.stringify(row, null, '\t');
         res.sendStatus(rowString2);
-        console.log(req.params.crimeArea);
     });
 });
 //crime rates and total earnings by area and sector
@@ -84,9 +77,6 @@ app.get('/compareSectorAndStation/:sector/:crimeArea', function (req, res)
     {
         var rowString2 = JSON.stringify(row, null, '\t');
         res.sendStatus(rowString2);
-        console.log(req.params.crimeArea);
-        console.log(req.params.sector);
-        
     });
 });
 //join by year, sector and station
@@ -96,8 +86,6 @@ app.get('/compareSectorAndStation/:sector/:crimeArea/:yearStr', function (req, r
     {
         var rowString2 = JSON.stringify(row, null, '\t');
         res.sendStatus(rowString2);
-        console.log(req.params.crimeArea);
-        console.log(req.params.sector);
         
     });
 });
@@ -108,10 +96,19 @@ app.get('/compareSectorAndStation/:sector/:crimeArea/:yearStr/:crimeType', funct
     {
         var rowString2 = JSON.stringify(row, null, '\t');
         res.sendStatus(rowString2);
-        console.log(req.params.crimeArea);
-        console.log(req.params.sector);
-         console.log(req.params.crimeType);
         
+    });
+});
+//Simple new entry into crime database
+app.get('/newCrimeEntry/:type/:station/:year/:amount', function (req, res)
+{
+    db.all("INSERT INTO crimeRates(Crime , GardaStation , Y"+req.params.year+") VALUES (\""+req.params.type+"\" , \""+req.params.station+"\" , "+req.params.amount+")", function(err,row)
+    {
+        var rowString2 = JSON.stringify(row, null, '\t');
+        res.sendStatus(rowString2);
+      //  console.log(req.params.type);
+      //  console.log(req.params.station);
+      //  console.log(req.params.amount);
     });
 });
 // Start the server.
