@@ -92,7 +92,7 @@ app.get('/compareSectorAndStation/:sector/:crimeArea', function (req, res)
 //join by year, sector and station
 app.get('/compareSectorAndStation/:sector/:crimeArea/:yearStr', function (req, res)
 {
-    db.all("SELECT crimeRates.Crime as Crimes, crimeRates.Y"+req.params.yearStr+" AS numberofattempts, annualEarnings.Y"+req.params.yearStr+" AS sumOfEarnings, crimeRates.GardaStation as GardaStations, annualEarnings.Sector as Sector FROM crimeRates LEFT JOIN annualEarnings WHERE crimeRates.GardaStation LIKE \"%"+req.params.crimeArea+"%\" AND annualEarnings.Sector LIKE \"%"+req.params.sector+"%\" ", function(err,row)
+    db.all("SELECT crimeRates.Crime as Crimes, crimeRates.Y"+req.params.yearStr+" AS numberofattempts, annualEarnings.Y"+req.params.yearStr+" AS sumOfEarnings,  annualEarnings.EarningType as Type crimeRates.GardaStation as GardaStations, annualEarnings.Sector as Sector FROM crimeRates LEFT JOIN annualEarnings WHERE crimeRates.GardaStation LIKE \"%"+req.params.crimeArea+"%\" AND annualEarnings.Sector LIKE \"%"+req.params.sector+"%\" ", function(err,row)
     {
         var rowString2 = JSON.stringify(row, null, '\t');
         res.sendStatus(rowString2);
@@ -104,7 +104,7 @@ app.get('/compareSectorAndStation/:sector/:crimeArea/:yearStr', function (req, r
 //join by year , sector, crime area and crime
 app.get('/compareSectorAndStation/:sector/:crimeArea/:yearStr/:crimeType', function (req, res)
 {
-    db.all("SELECT crimeRates.Crime as Crimes, crimeRates.Y"+req.params.yearStr+" AS numberofattempts, annualEarnings.Y"+req.params.yearStr+", crimeRates.GardaStation as GardaStations, annualEarnings.Sector as Sector FROM crimeRates INNER JOIN annualEarnings WHERE crimeRates.GardaStation LIKE \"%"+req.params.crimeArea+"%\" AND annualEarnings.Sector LIKE \"%"+req.params.sector+"%\"AND crimeRates.Crime LIKE \"%"+req.params.crimeType+"%\"  ", function(err,row)
+    db.all("SELECT crimeRates.Crime as Crimes, crimeRates.Y"+req.params.yearStr+" AS numberofattempts, annualEarnings.Y"+req.params.yearStr+" as Earnings , annualEarnings.EarningType as Type, crimeRates.GardaStation as GardaStations, annualEarnings.Sector as Sector FROM crimeRates INNER JOIN annualEarnings WHERE crimeRates.GardaStation LIKE \"%"+req.params.crimeArea+"%\" AND annualEarnings.Sector LIKE \"%"+req.params.sector+"%\"AND crimeRates.Crime LIKE \"%"+req.params.crimeType+"%\"  ", function(err,row)
     {
         var rowString2 = JSON.stringify(row, null, '\t');
         res.sendStatus(rowString2);
