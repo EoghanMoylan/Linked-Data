@@ -101,6 +101,19 @@ app.get('/compareSectorAndStation/:sector/:crimeArea/:yearStr', function (req, r
         
     });
 });
+//join by year , sector, crime area and crime
+app.get('/compareSectorAndStation/:sector/:crimeArea/:yearStr/:crimeType', function (req, res)
+{
+    db.all("SELECT crimeRates.Crime as Crimes, crimeRates.Y"+req.params.yearStr+" AS numberofattempts, annualEarnings.Y"+req.params.yearStr+", crimeRates.GardaStation as GardaStations, annualEarnings.Sector as Sector FROM crimeRates INNER JOIN annualEarnings WHERE crimeRates.GardaStation LIKE \"%"+req.params.crimeArea+"%\" AND annualEarnings.Sector LIKE \"%"+req.params.sector+"%\"AND crimeRates.Crime LIKE \"%"+req.params.crimeType+"%\"  ", function(err,row)
+    {
+        var rowString2 = JSON.stringify(row, null, '\t');
+        res.sendStatus(rowString2);
+        console.log(req.params.crimeArea);
+        console.log(req.params.sector);
+         console.log(req.params.crimeType);
+        
+    });
+});
 // Start the server.
 var server = app.listen(8000);
 
