@@ -7,7 +7,8 @@
     "Y2011":50809735,
     "Y2012":51147674,
     "Y2013":51969358,
-    "Y2014":53217805
+    "Y2014":53217805,
+    "Sector":"All NACE economic sectors"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -17,7 +18,8 @@
     "Y2011":1478620,
     "Y2012":1424374,
     "Y2013":1399944,
-    "Y2014":1455118
+    "Y2014":1455118,
+    "Sector":"All NACE economic sectors"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -27,7 +29,8 @@
     "Y2011":2586319,
     "Y2012":2748409,
     "Y2013":2750004,
-    "Y2014":3032487
+    "Y2014":3032487,
+    "Sector":"All NACE economic sectors"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -37,7 +40,8 @@
     "Y2011":54874675,
     "Y2012":55320456,
     "Y2013":56119306,
-    "Y2014":57705409
+    "Y2014":57705409,
+    "Sector":"All NACE economic sectors"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -47,7 +51,8 @@
     "Y2011":7443338,
     "Y2012":8559203,
     "Y2013":8775812,
-    "Y2014":8915745
+    "Y2014":8915745,
+    "Sector":"All NACE economic sectors"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -57,7 +62,19 @@
     "Y2011":62318013,
     "Y2012":63879659,
     "Y2013":64895118,
-    "Y2014":66621154
+    "Y2014":66621154,
+    "Sector":"All NACE economic sectors"
+  },
+  {
+    "EarningType":"",
+    "Y2008":null,
+    "Y2009":null,
+    "Y2010":null,
+    "Y2011":null,
+    "Y2012":null,
+    "Y2013":null,
+    "Y2014":null,
+    "Sector":""
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -67,7 +84,8 @@
     "Y2011":2244917,
     "Y2012":2022552,
     "Y2013":2012104,
-    "Y2014":2367996
+    "Y2014":2367996,
+    "Sector":"Construction (F)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -77,7 +95,8 @@
     "Y2011":95469,
     "Y2012":90098,
     "Y2013":92477,
-    "Y2014":119065
+    "Y2014":119065,
+    "Sector":"Construction (F)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -87,7 +106,8 @@
     "Y2011":29034,
     "Y2012":43674,
     "Y2013":40600,
-    "Y2014":66214
+    "Y2014":66214,
+    "Sector":"Construction (F)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -97,7 +117,8 @@
     "Y2011":2369420,
     "Y2012":2156324,
     "Y2013":2145182,
-    "Y2014":2553275
+    "Y2014":2553275,
+    "Sector":"Construction (F)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -107,7 +128,8 @@
     "Y2011":297895,
     "Y2012":274738,
     "Y2013":267958,
-    "Y2014":330669
+    "Y2014":330669,
+    "Sector":"Construction (F)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -117,7 +139,8 @@
     "Y2011":2667315,
     "Y2012":2431062,
     "Y2013":2413139,
-    "Y2014":2883944
+    "Y2014":2883944,
+    "Sector":"Construction (F)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -127,7 +150,8 @@
     "Y2011":6800878,
     "Y2012":6999783,
     "Y2013":7126521,
-    "Y2014":7123681
+    "Y2014":7123681,
+    "Sector":"Wholesale and retail trade; repair of motor vehicles and motorcycles (G)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -137,7 +161,8 @@
     "Y2011":158422,
     "Y2012":152092,
     "Y2013":158047,
-    "Y2014":154106
+    "Y2014":154106,
+    "Sector":"Wholesale and retail trade; repair of motor vehicles and motorcycles (G)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -147,7 +172,8 @@
     "Y2011":327154,
     "Y2012":357596,
     "Y2013":373020,
-    "Y2014":405280
+    "Y2014":405280,
+    "Sector":"Wholesale and retail trade; repair of motor vehicles and motorcycles (G)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -157,7 +183,8 @@
     "Y2011":7286454,
     "Y2012":7509470,
     "Y2013":7657587,
-    "Y2014":7683066
+    "Y2014":7683066,
+    "Sector":"Wholesale and retail trade; repair of motor vehicles and motorcycles (G)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -167,7 +194,8 @@
     "Y2011":1026442,
     "Y2012":1189813,
     "Y2013":1149596,
-    "Y2014":1216506
+    "Y2014":1216506,
+    "Sector":"Wholesale and retail trade; repair of motor vehicles and motorcycles (G)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -177,7 +205,8 @@
     "Y2011":8312896,
     "Y2012":8699283,
     "Y2013":8807184,
-    "Y2014":8899572
+    "Y2014":8899572,
+    "Sector":"Wholesale and retail trade; repair of motor vehicles and motorcycles (G)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -187,7 +216,8 @@
     "Y2011":2209742,
     "Y2012":2129449,
     "Y2013":2167249,
-    "Y2014":2174980
+    "Y2014":2174980,
+    "Sector":"Transportation and storage (H)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -197,7 +227,8 @@
     "Y2011":89804,
     "Y2012":80264,
     "Y2013":77582,
-    "Y2014":89023
+    "Y2014":89023,
+    "Sector":"Transportation and storage (H)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -207,7 +238,8 @@
     "Y2011":132507,
     "Y2012":162176,
     "Y2013":146471,
-    "Y2014":131340
+    "Y2014":131340,
+    "Sector":"Transportation and storage (H)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -217,7 +249,8 @@
     "Y2011":2432053,
     "Y2012":2371889,
     "Y2013":2391302,
-    "Y2014":2395343
+    "Y2014":2395343,
+    "Sector":"Transportation and storage (H)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -227,7 +260,8 @@
     "Y2011":423088,
     "Y2012":500939,
     "Y2013":451015,
-    "Y2014":424232
+    "Y2014":424232,
+    "Sector":"Transportation and storage (H)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -237,7 +271,8 @@
     "Y2011":2855141,
     "Y2012":2872828,
     "Y2013":2842317,
-    "Y2014":2819575
+    "Y2014":2819575,
+    "Sector":"Transportation and storage (H)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -247,7 +282,8 @@
     "Y2011":1926299,
     "Y2012":1993193,
     "Y2013":2194058,
-    "Y2014":2515441
+    "Y2014":2515441,
+    "Sector":"\nAccommodation and food service activities (I)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -257,7 +293,8 @@
     "Y2011":30534,
     "Y2012":32586,
     "Y2013":36812,
-    "Y2014":38263
+    "Y2014":38263,
+    "Sector":"\nAccommodation and food service activities (I)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -267,7 +304,8 @@
     "Y2011":25109,
     "Y2012":33080,
     "Y2013":36274,
-    "Y2014":43544
+    "Y2014":43544,
+    "Sector":"\nAccommodation and food service activities (I)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -277,7 +315,8 @@
     "Y2011":1981942,
     "Y2012":2058859,
     "Y2013":2267143,
-    "Y2014":2597248
+    "Y2014":2597248,
+    "Sector":"\nAccommodation and food service activities (I)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -287,7 +326,8 @@
     "Y2011":185138,
     "Y2012":188533,
     "Y2013":207575,
-    "Y2014":275441
+    "Y2014":275441,
+    "Sector":"\nAccommodation and food service activities (I)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -297,7 +337,8 @@
     "Y2011":2167080,
     "Y2012":2247392,
     "Y2013":2474718,
-    "Y2014":2872689
+    "Y2014":2872689,
+    "Sector":"\nAccommodation and food service activities (I)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -307,7 +348,8 @@
     "Y2011":2388305,
     "Y2012":2665200,
     "Y2013":2739264,
-    "Y2014":2807593
+    "Y2014":2807593,
+    "Sector":"Information and communication (J)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -317,7 +359,8 @@
     "Y2011":26076,
     "Y2012":30451,
     "Y2013":29732,
-    "Y2014":34653
+    "Y2014":34653,
+    "Sector":"Information and communication (J)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -327,7 +370,8 @@
     "Y2011":200590,
     "Y2012":263609,
     "Y2013":284763,
-    "Y2014":315773
+    "Y2014":315773,
+    "Sector":"Information and communication (J)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -337,7 +381,8 @@
     "Y2011":2614971,
     "Y2012":2959260,
     "Y2013":3053760,
-    "Y2014":3158019
+    "Y2014":3158019,
+    "Sector":"Information and communication (J)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -347,7 +392,8 @@
     "Y2011":521928,
     "Y2012":620552,
     "Y2013":813712,
-    "Y2014":691602
+    "Y2014":691602,
+    "Sector":"Information and communication (J)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -357,7 +403,8 @@
     "Y2011":3136899,
     "Y2012":3579811,
     "Y2013":3867472,
-    "Y2014":3849621
+    "Y2014":3849621,
+    "Sector":"Information and communication (J)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -367,7 +414,8 @@
     "Y2011":2679907,
     "Y2012":2790549,
     "Y2013":3105378,
-    "Y2014":3209147
+    "Y2014":3209147,
+    "Sector":"Professional, scientific and technical activities (M)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -377,7 +425,8 @@
     "Y2011":20536,
     "Y2012":15655,
     "Y2013":20367,
-    "Y2014":23000
+    "Y2014":23000,
+    "Sector":"Professional, scientific and technical activities (M)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -387,7 +436,8 @@
     "Y2011":137978,
     "Y2012":172312,
     "Y2013":146544,
-    "Y2014":185973
+    "Y2014":185973,
+    "Sector":"Professional, scientific and technical activities (M)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -397,7 +447,8 @@
     "Y2011":2838420,
     "Y2012":2978515,
     "Y2013":3272289,
-    "Y2014":3418121
+    "Y2014":3418121,
+    "Sector":"Professional, scientific and technical activities (M)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -407,7 +458,8 @@
     "Y2011":440375,
     "Y2012":488609,
     "Y2013":547982,
-    "Y2014":531576
+    "Y2014":531576,
+    "Sector":"Professional, scientific and technical activities (M)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -417,7 +469,8 @@
     "Y2011":3278795,
     "Y2012":3467124,
     "Y2013":3820271,
-    "Y2014":3949698
+    "Y2014":3949698,
+    "Sector":"Professional, scientific and technical activities (M)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -427,7 +480,8 @@
     "Y2011":1837791,
     "Y2012":2013284,
     "Y2013":2098927,
-    "Y2014":2356915
+    "Y2014":2356915,
+    "Sector":"Administrative and support service activities (N)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -437,7 +491,8 @@
     "Y2011":40720,
     "Y2012":52898,
     "Y2013":43311,
-    "Y2014":41160
+    "Y2014":41160,
+    "Sector":"Administrative and support service activities (N)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -447,7 +502,8 @@
     "Y2011":110208,
     "Y2012":111407,
     "Y2013":124601,
-    "Y2014":136015
+    "Y2014":136015,
+    "Sector":"Administrative and support service activities (N)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -457,7 +513,8 @@
     "Y2011":1988718,
     "Y2012":2177590,
     "Y2013":2266839,
-    "Y2014":2534090
+    "Y2014":2534090,
+    "Sector":"Administrative and support service activities (N)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -467,7 +524,8 @@
     "Y2011":233251,
     "Y2012":299791,
     "Y2013":321240,
-    "Y2014":348779
+    "Y2014":348779,
+    "Sector":"Administrative and support service activities (N)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -477,7 +535,8 @@
     "Y2011":2221970,
     "Y2012":2477381,
     "Y2013":2588079,
-    "Y2014":2882869
+    "Y2014":2882869,
+    "Sector":"Administrative and support service activities (N)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -487,7 +546,8 @@
     "Y2011":4927005,
     "Y2012":5027588,
     "Y2013":4854086,
-    "Y2014":4902592
+    "Y2014":4902592,
+    "Sector":"Public administration and defence; compulsory social security (O)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -497,7 +557,8 @@
     "Y2011":182770,
     "Y2012":143798,
     "Y2013":136394,
-    "Y2014":125608
+    "Y2014":125608,
+    "Sector":"Public administration and defence; compulsory social security (O)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -507,7 +568,8 @@
     "Y2011":259502,
     "Y2012":235791,
     "Y2013":226635,
-    "Y2014":235137
+    "Y2014":235137,
+    "Sector":"Public administration and defence; compulsory social security (O)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -517,7 +579,8 @@
     "Y2011":5369278,
     "Y2012":5407178,
     "Y2013":5217115,
-    "Y2014":5263337
+    "Y2014":5263337,
+    "Sector":"Public administration and defence; compulsory social security (O)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -527,7 +590,8 @@
     "Y2011":350727,
     "Y2012":414068,
     "Y2013":411794,
-    "Y2014":432747
+    "Y2014":432747,
+    "Sector":"Public administration and defence; compulsory social security (O)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -537,7 +601,8 @@
     "Y2011":5720005,
     "Y2012":5821246,
     "Y2013":5628910,
-    "Y2014":5696084
+    "Y2014":5696084,
+    "Sector":"Public administration and defence; compulsory social security (O)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -547,7 +612,8 @@
     "Y2011":5720567,
     "Y2012":5481298,
     "Y2013":5460537,
-    "Y2014":5539657
+    "Y2014":5539657,
+    "Sector":"Education (P)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -557,7 +623,8 @@
     "Y2011":44621,
     "Y2012":45988,
     "Y2013":37950,
-    "Y2014":29367
+    "Y2014":29367,
+    "Sector":"Education (P)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -567,7 +634,8 @@
     "Y2011":153491,
     "Y2012":158170,
     "Y2013":142824,
-    "Y2014":68466
+    "Y2014":68466,
+    "Sector":"Education (P)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -577,7 +645,8 @@
     "Y2011":5918679,
     "Y2012":5685455,
     "Y2013":5641310,
-    "Y2014":5637489
+    "Y2014":5637489,
+    "Sector":"Education (P)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -587,7 +656,8 @@
     "Y2011":473910,
     "Y2012":560460,
     "Y2013":564988,
-    "Y2014":574889
+    "Y2014":574889,
+    "Sector":"Education (P)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -597,7 +667,8 @@
     "Y2011":6392589,
     "Y2012":6245915,
     "Y2013":6206298,
-    "Y2014":6212378
+    "Y2014":6212378,
+    "Sector":"Education (P)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -607,7 +678,8 @@
     "Y2011":7413067,
     "Y2012":7409194,
     "Y2013":7424553,
-    "Y2014":7320642
+    "Y2014":7320642,
+    "Sector":"Human health and social work activities (Q)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -617,7 +689,8 @@
     "Y2011":320109,
     "Y2012":307975,
     "Y2013":268104,
-    "Y2014":249904
+    "Y2014":249904,
+    "Sector":"Human health and social work activities (Q)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -627,7 +700,8 @@
     "Y2011":390221,
     "Y2012":385270,
     "Y2013":370455,
-    "Y2014":337018
+    "Y2014":337018,
+    "Sector":"Human health and social work activities (Q)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -637,7 +711,8 @@
     "Y2011":8123396,
     "Y2012":8102439,
     "Y2013":8063111,
-    "Y2014":7907564
+    "Y2014":7907564,
+    "Sector":"Human health and social work activities (Q)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -647,7 +722,8 @@
     "Y2011":711617,
     "Y2012":835612,
     "Y2013":822261,
-    "Y2014":847240
+    "Y2014":847240,
+    "Sector":"Human health and social work activities (Q)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -657,7 +733,8 @@
     "Y2011":8835013,
     "Y2012":8938051,
     "Y2013":8885372,
-    "Y2014":8754804
+    "Y2014":8754804,
+    "Sector":"Human health and social work activities (Q)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -667,7 +744,8 @@
     "Y2011":7427302,
     "Y2012":7340971,
     "Y2013":7585557,
-    "Y2014":7744306
+    "Y2014":7744306,
+    "Sector":"Industry (B to E)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -677,7 +755,8 @@
     "Y2011":391559,
     "Y2012":391095,
     "Y2013":425596,
-    "Y2014":478500
+    "Y2014":478500,
+    "Sector":"Industry (B to E)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -687,7 +766,8 @@
     "Y2011":457967,
     "Y2012":491393,
     "Y2013":482360,
-    "Y2014":593552
+    "Y2014":593552,
+    "Sector":"Industry (B to E)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -697,7 +777,8 @@
     "Y2011":8276828,
     "Y2012":8223458,
     "Y2013":8493514,
-    "Y2014":8816357
+    "Y2014":8816357,
+    "Sector":"Industry (B to E)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -707,7 +788,8 @@
     "Y2011":1611485,
     "Y2012":1854195,
     "Y2013":1867197,
-    "Y2014":1904825
+    "Y2014":1904825,
+    "Sector":"Industry (B to E)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -717,7 +799,8 @@
     "Y2011":9888313,
     "Y2012":10077653,
     "Y2013":10360711,
-    "Y2014":10721182
+    "Y2014":10721182,
+    "Sector":"Industry (B to E)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -727,7 +810,8 @@
     "Y2011":4145002,
     "Y2012":4163310,
     "Y2013":4067838,
-    "Y2014":4109243
+    "Y2014":4109243,
+    "Sector":"Financial, insurance and real estate activities (K,L)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -737,7 +821,8 @@
     "Y2011":54656,
     "Y2012":63162,
     "Y2013":58163,
-    "Y2014":57056
+    "Y2014":57056,
+    "Sector":"Financial, insurance and real estate activities (K,L)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -747,7 +832,8 @@
     "Y2011":337204,
     "Y2012":298445,
     "Y2013":334647,
-    "Y2014":476579
+    "Y2014":476579,
+    "Sector":"Financial, insurance and real estate activities (K,L)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -757,7 +843,8 @@
     "Y2011":4536861,
     "Y2012":4524917,
     "Y2013":4460647,
-    "Y2014":4642878
+    "Y2014":4642878,
+    "Sector":"Financial, insurance and real estate activities (K,L)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -767,7 +854,8 @@
     "Y2011":1015859,
     "Y2012":1167800,
     "Y2013":1168205,
-    "Y2014":1166381
+    "Y2014":1166381,
+    "Sector":"Financial, insurance and real estate activities (K,L)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -777,7 +865,8 @@
     "Y2011":5552720,
     "Y2012":5692717,
     "Y2013":5628853,
-    "Y2014":5809259
+    "Y2014":5809259,
+    "Sector":"Financial, insurance and real estate activities (K,L)"
   },
   {
     "EarningType":"Regular Earnings (Euro Thousand)",
@@ -787,7 +876,8 @@
     "Y2011":1088954,
     "Y2012":1111302,
     "Y2013":1133287,
-    "Y2014":1045611
+    "Y2014":1045611,
+    "Sector":"Arts, entertainment, recreation and other service activities (R,S)"
   },
   {
     "EarningType":"Overtime Earnings (Euro Thousand)",
@@ -797,7 +887,8 @@
     "Y2011":23346,
     "Y2012":18313,
     "Y2013":15410,
-    "Y2014":15414
+    "Y2014":15414,
+    "Sector":"Arts, entertainment, recreation and other service activities (R,S)"
   },
   {
     "EarningType":"Irregular Earnings (Euro Thousand)",
@@ -807,7 +898,8 @@
     "Y2011":25355,
     "Y2012":35486,
     "Y2013":40810,
-    "Y2014":37596
+    "Y2014":37596,
+    "Sector":"Arts, entertainment, recreation and other service activities (R,S)"
   },
   {
     "EarningType":"Total Wages and Salaries (Euro Thousand)",
@@ -817,7 +909,8 @@
     "Y2011":1137655,
     "Y2012":1165101,
     "Y2013":1189507,
-    "Y2014":1098621
+    "Y2014":1098621,
+    "Sector":"Arts, entertainment, recreation and other service activities (R,S)"
   },
   {
     "EarningType":"Other Labour Costs (Euro Thousand)",
@@ -827,7 +920,8 @@
     "Y2011":151622,
     "Y2012":164095,
     "Y2013":182287,
-    "Y2014":170858
+    "Y2014":170858,
+    "Sector":"Arts, entertainment, recreation and other service activities (R,S)"
   },
   {
     "EarningType":"Total Labour Costs (Euro Thousand)",
@@ -837,6 +931,7 @@
     "Y2011":1289277,
     "Y2012":1329196,
     "Y2013":1371794,
-    "Y2014":1269479
+    "Y2014":1269479,
+    "Sector":"Arts, entertainment, recreation and other service activities (R,S)"
   }
 ]

@@ -24,7 +24,7 @@ db.serialize(function()
   db.run("CREATE TABLE crimeRates('GardaStation' Text, 'Y2008' INTEGER, 'Y2009' INTEGER, 'Y2010' INTEGER, 'Y2011' INTEGER ,'Y2012' INTEGER, 'Y2013' INTEGER, 'Crime' Text)");
     
     //set up annualEarnings table
-  db.run("CREATE TABLE annualEarnings('EarningType' Text, 'Y2008' INTEGER, 'Y2009' INTEGER, 'Y2010' INTEGER, 'Y2011' INTEGER ,'Y2012' INTEGER, 'Y2013' INTEGER, 'Y2014' INTEGER)");
+  db.run("CREATE TABLE annualEarnings('EarningType' Text, 'Y2008' INTEGER, 'Y2009' INTEGER, 'Y2010' INTEGER, 'Y2011' INTEGER ,'Y2012' INTEGER, 'Y2013' INTEGER, 'Y2014' INTEGER, 'Sector' Text)");
     
 //populate crime table
   var stmt = db.prepare("INSERT INTO crimeRates VALUES (?,?,?,?,?,?,?,?)");
@@ -36,11 +36,11 @@ db.serialize(function()
     stmt.finalize();
     
 //populate annual earnings table
- stmt = db.prepare("INSERT INTO annualEarnings VALUES (?,?,?,?,?,?,?,?)");
+ stmt = db.prepare("INSERT INTO annualEarnings VALUES (?,?,?,?,?,?,?,?,?)");
       earnings.forEach(function(fill)
       {
-        stmt.run(fill.EarningType, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Y2014);
-        console.log(fill.EarningType, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Y2014);
+        stmt.run(fill.EarningType, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Y2014, fill.Sector);
+        console.log(fill.EarningType, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Y2014, fill.Sector);
       });
     stmt.finalize();
     //ytemp
