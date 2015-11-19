@@ -111,6 +111,18 @@ app.get('/newCrimeEntry/:type/:station/:year/:amount', function (req, res)
       //  console.log(req.params.amount);
     });
 });
+//Simple new entry into crime database
+app.get('/newEarningEntry/:sector/:type/:year/:amount', function (req, res)
+{
+    db.all("INSERT INTO annualEarnings(Sector , EarningType , Y"+req.params.year+") VALUES (\""+req.params.sector+"\" , \""+req.params.type+"\" , "+req.params.amount+")", function(err,row)
+    {
+        var rowString2 = JSON.stringify(row, null, '\t');
+        res.sendStatus(rowString2);
+      //  console.log(req.params.type);
+      //  console.log(req.params.station);
+      //  console.log(req.params.amount);
+    });
+});
 // Start the server.
 var server = app.listen(8000);
 
