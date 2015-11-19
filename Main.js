@@ -6,14 +6,16 @@ var fs = require('fs');
 //Reads in JSON file
 var crimes = JSON.parse(fs.readFileSync('CrimeRates.json','utf8'));
 var earnings = JSON.parse(fs.readFileSync('AnnualEarns.json','utf8'));
-
+//allows broswer to show JSON files
 var bodyParser = require('body-parser');
 //declare up DB with SQLite3
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database(':memory:');
+//allows us to create path to HTML file
+var path = require('path');
 
 
-app.use(bodyParser.json()); // allow app to use JSON 
+app.use(bodyParser.json()); // allow broswer to show JSON 
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
@@ -49,7 +51,7 @@ db.serialize(function()
 //Set up default page for site..
 app.get('/', function(req, res)
 {
-  res.send("Welcome To the crime vs earnings API");
+  res.sendFile(path.join(__dirname+'/Default.html'));
 });
 
 //set up years page
