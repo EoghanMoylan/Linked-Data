@@ -23,13 +23,13 @@ app.use(bodyParser.urlencoded({ extended: true }));
 db.serialize(function() 
 {
     //set up crime table   
-  db.run("CREATE TABLE crimeRates('GardaStation' Text, 'Y2008' INTEGER, 'Y2009' INTEGER, 'Y2010' INTEGER, 'Y2011' INTEGER ,'Y2012' INTEGER, 'Y2013' INTEGER, 'Crime' Text)");
+  db.run("CREATE TABLE crimeRates(id INTEGER PRIMARY KEY AUTOINCREMENT,'GardaStation' Text, 'Y2008' INTEGER, 'Y2009' INTEGER, 'Y2010' INTEGER, 'Y2011' INTEGER ,'Y2012' INTEGER, 'Y2013' INTEGER, 'Crime' Text)");
     
     //set up annualEarnings table
-  db.run("CREATE TABLE annualEarnings('EarningType' Text, 'Y2008' INTEGER, 'Y2009' INTEGER, 'Y2010' INTEGER, 'Y2011' INTEGER ,'Y2012' INTEGER, 'Y2013' INTEGER, 'Y2014' INTEGER, 'Sector' Text)");
+  db.run("CREATE TABLE annualEarnings(id INTEGER PRIMARY KEY AUTOINCREMENT,'EarningType' Text, 'Y2008' INTEGER, 'Y2009' INTEGER, 'Y2010' INTEGER, 'Y2011' INTEGER ,'Y2012' INTEGER, 'Y2013' INTEGER, 'Y2014' INTEGER, 'Sector' Text)");
     
 //populate crime table
-  var stmt = db.prepare("INSERT INTO crimeRates VALUES (?,?,?,?,?,?,?,?)");
+  var stmt = db.prepare("INSERT INTO crimeRates (GardaStation,Y2008,Y2009,Y2010,Y2011,Y2012,Y2013,Crime) VALUES (?,?,?,?,?,?,?,?)");
       crimes.forEach(function (fill)
       {
         stmt.run(fill.GardaStation, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Crime);
@@ -38,7 +38,7 @@ db.serialize(function()
     stmt.finalize();
     
 //populate annual earnings table
- stmt = db.prepare("INSERT INTO annualEarnings VALUES (?,?,?,?,?,?,?,?,?)");
+ stmt = db.prepare("INSERT INTO annualEarnings (EarningType,Y2008,Y2009,Y2010,Y2011,Y2012,Y2013,Y2014,Sector) VALUES (?,?,?,?,?,?,?,?,?)");
       earnings.forEach(function(fill)
       {
         stmt.run(fill.EarningType, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Y2014, fill.Sector);
@@ -53,11 +53,10 @@ app.get('/', function(req, res)
 {
   res.sendFile(path.join(__dirname+'/Default.html'));
 });
-
 //set up years page
 app.get('/annualEarningsYear/:yearStr', function (req, res)
 {
-    db.all("SELECT Y"+req.params.yearStr+" FROM annualEarnings", function(err,row)
+    db.all("SELECT id, Y"+req.params.yearStr+" FROM annualEarnings", function(err,row)
     {
         var rowString = JSON.stringify(row, null, '\t');
         res.sendStatus(rowString);
@@ -66,7 +65,7 @@ app.get('/annualEarningsYear/:yearStr', function (req, res)
 //returns sum of crime attempts based on parameters entered
 app.get('/GardaStation/:crimeArea', function (req, res)
 {
-    db.all("SELECT Crime, (Y2008 + Y2009 + Y2010 + Y2011 +Y2012 + Y2013) AS numberofattempts, GardaStation FROM crimeRates WHERE GardaStation LIKE \"%"+ req.params.crimeArea+"%\" ", function(err,row)
+    db.all("SELECT id,Crime, (Y2008 + Y2009 + Y2010 + Y2011 +Y2012 + Y2013) AS numberofattempts, GardaStation FROM crimeRates WHERE GardaStation LIKE \"%"+ req.params.crimeArea+"%\" ", function(err,row)
     {
         var rowString2 = JSON.stringify(row, null, '\t');
         res.sendStatus(rowString2);
@@ -123,6 +122,21 @@ app.get('/newEarningEntry/:sector/:type/:year/:amount', function (req, res)
       //  console.log(req.params.type);
       //  console.log(req.params.station);
       //  console.log(req.params.amount);
+    });
+});
+//Simple new entry into crime database
+app.get('/deleteEarning/:id', function (req, res)
+{
+    db.all("DELETE FROM annualEarnings WHERE id="+req.params.id+"", function(err,row)
+    {
+        res.sendStatus("Earning with ID " + req.params.id + "has been deleted.");
+    });
+});
+app.get('/deleteCrime/:id', function (req, res)
+{
+    db.all("DELETE FROM crimeRates WHERE id="+req.params.id+"", function(err,row)
+    {
+        res.sendStatus("Crime with ID " + req.params.id + "has been deleted.");
     });
 });
 // Start the server.
