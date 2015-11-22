@@ -8,7 +8,7 @@ var crimes = JSON.parse(fs.readFileSync('CrimeRates.json','utf8'));
 var earnings = JSON.parse(fs.readFileSync('AnnualEarns.json','utf8'));
 //allows broswer to show JSON files
 var bodyParser = require('body-parser');
-//declare up DB with SQLite3
+//declare DB with SQLite3
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database(':memory:');
 //allows us to create path to HTML file
@@ -47,7 +47,6 @@ db.serialize(function()
         //console.log(fill.EarningType, fill.Y2008 , fill.Y2009, fill.Y2010, fill.Y2011 , fill.Y2012 , fill.Y2013, fill.Y2014, fill.Sector);
       });
     stmt.finalize();
-    //ytemp
   });
 
 //Set up default page for site, sends html file named Default.html..
@@ -60,6 +59,7 @@ app.get('/annualEarningsYear/:yearStr', function (req, res)
 {
     db.all("SELECT id, Y"+req.params.yearStr+" FROM annualEarnings", function(err,row)
     {
+        //converts json to browser readable format
         var rowString = JSON.stringify(row, null, '\t');
         res.sendStatus(rowString);
     });
@@ -156,7 +156,7 @@ app.delete('/deleteCrime/:id', function (req, res)
 //update number of crimes on crime table using id, year and the amount
 app.put('/updateCrimeAmount/:id/:year/:amount', function (req, res)
 {
-    db.all("UPDATE crimeRates SET (Y"+req.params.year+" = "+req.params.amount+")  WHERE id="+req.params.id+"", function(err,row)
+    db.all("UPDATE crimeRates SET Y"+req.params.year+" = "+req.params.amount+"  WHERE id="+req.params.id+"", function(err,row)
     {
         res.sendStatus("Crime with ID " + req.params.id + " has been updated.");
     });
@@ -164,7 +164,7 @@ app.put('/updateCrimeAmount/:id/:year/:amount', function (req, res)
 //update earnings on annualEarnings table using id, year and the amount
 app.put('/updateEarningsAmount/:id/:year/:amount', function (req, res)
 {
-    db.all("UPDATE annualEarnings SET (Y"+req.params.year+" = "+req.params.amount+")  WHERE id="+req.params.id+"", function(err,row)
+    db.all("UPDATE annualEarnings SET Y"+req.params.year+" = "+req.params.amount+"  WHERE id="+req.params.id+"", function(err,row)
     {
         res.sendStatus("Earnings with ID " + req.params.id + " has been updated.");
     });
