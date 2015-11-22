@@ -80,13 +80,15 @@ app.post('/newCrimeEntry/:type/:station/:year/:amount', function (req, res)
 });
 ```
 ##References
-*For sending HTML using Express : [Use ExpressJS to Deliver HTML Files](https://scotch.io/tutorials/use-expressjs-to-deliver-html-files)
+Here are some of the tools and sources used when creating this API.
 
-*General info on SQL Queries (e.g Updates) : [w3Schools](http://www.w3schools.com/sql/sql_update.asp)
+-For sending HTML using Express : [Use ExpressJS to Deliver HTML Files](https://scotch.io/tutorials/use-expressjs-to-deliver-html-files)
 
-*General info on RESTful APIs : [Scotch.io](https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4)
+-General info on SQL Queries (e.g Updates) : [w3Schools](http://www.w3schools.com/sql/sql_update.asp)
 
-*Plugin for testing API : [HttpRequester](https://addons.mozilla.org/en-us/firefox/addon/httprequester/)
+-General info on RESTful APIs : [Scotch.io](https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4)
+
+-Plugin for testing API : [HttpRequester](https://addons.mozilla.org/en-us/firefox/addon/httprequester/)
 
 #####Datasets used:
 
