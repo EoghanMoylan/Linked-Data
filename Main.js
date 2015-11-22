@@ -49,6 +49,10 @@ db.serialize(function()
     stmt.finalize();
   });
 
+//++++++++++++++++++++++++++GET STATEMENTS(SELECT)+++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 //Set up default page for site, sends html file named Default.html..
 app.get('/', function(req, res)
 {
@@ -121,6 +125,11 @@ app.get('/compareSectorAndStation/:sector/:crimeArea/:yearStr/:crimeType', funct
         
     });
 });
+
+//++++++++++++++++++++++++++POST STATEMENTS(INSERT)++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 //Simple new entry into crime database
 app.post('/newCrimeEntry/:type/:station/:year/:amount', function (req, res)
 {
@@ -137,6 +146,10 @@ app.post('/newEarningEntry/:sector/:type/:year/:amount', function (req, res)
         res.sendStatus("New Entry has been added.");
     });
 });
+
+//++++++++++++++++++++++++++DELETE STATEMENTS(DELETE)++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 //Delete Row from earnings table based on ID
 app.delete('/deleteEarning/:id', function (req, res)
 {
@@ -153,6 +166,10 @@ app.delete('/deleteCrime/:id', function (req, res)
         res.sendStatus("Crime with ID " + req.params.id + " has been deleted.");
     });
 });
+
+//++++++++++++++++++++++++++PUT STATEMENTS(UPDATE)+++++++++++++++++++++++++++++++
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 //update number of crimes on crime table using id, year and the amount
 app.put('/updateCrimeAmount/:id/:year/:amount', function (req, res)
 {
