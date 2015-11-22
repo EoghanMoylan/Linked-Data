@@ -2,7 +2,7 @@
 ***Eoghan Moylan***
 
 ##Overview
-The goal of this API is to create a link between the earnings across various sectors and the number of crimes occuring in various areas. The two datasets are linked by years (2008 - 2013). The API uses SQLite3 and was tested using the [HttpRequester](https://addons.mozilla.org/en-us/firefox/addon/httprequester/) plugin for Firefox. The target audience of this API would be journalists, students, organistions or other parties conducting research into a correlation between earnings in various sectors and increase/decrease in various crime rates. Users can add data, get data, update data and delete data using POST,GET,PUT and DELETE respectively (URLs listed below in *How To Use* section). The API reads in two JSON files and populates a database with them. Both JSON files are quite large and have been edited from their original form in order to make them more useful/compatiable.
+The goal of this API is to create a link between the earnings across various sectors and the number of crimes occurring in various areas. The two datasets are linked by years (2008 - 2013). The API uses SQLite3 and was tested using the [HttpRequester](https://addons.mozilla.org/en-us/firefox/addon/httprequester/) plugin for Firefox. The target audience of this API would be journalists, students, organisations or other parties conducting research into a correlation between earnings in various sectors and increase/decrease in various crime rates. Users can add data, get data, update data and delete data using POST, GET, PUT and DELETE respectively (URLs listed below in *How To Use* section). The API reads in two JSON files and populates a database with them. Both JSON files are quite large and have been edited from their original form in order to make them more useful/compatible.
 
 ####Expansion
 It would be possible to expand this API in future. All users would have to do is add an additional column for the year (so far limited to 2008 - 2013) and populate the rows as crimes and earnings occur. Users already have the ability to add and update data.
@@ -53,7 +53,7 @@ Updating data (PUT):
 ##Datasets
 ***Datasets were taken from CSO.ie in CSV format and converted into JSON. Links to originals are at bottom of the README.***
 
-The CrimeRates dataset used contains data listing all crimes reported in all Garda Staions in Ireland between 2008 to 2013. The dataset also lists the type of crime reported also.
+The CrimeRates dataset used contains data listing all crimes reported in all Garda Stations in Ireland between 2008 to 2013. The dataset also lists the type of crime reported also.
 The second dataset used, the AnnualEarnings dataset, list a sum of all earnings in various sectors through the years of 2008 to 2014. This dataset also lists the type of earning.
 
 
