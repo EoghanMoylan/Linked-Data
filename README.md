@@ -79,9 +79,16 @@ app.post('/newCrimeEntry/:type/:station/:year/:amount', function (req, res)
     });
 });
 ```
+##References
+*For sending HTML using Express : [Use ExpressJS to Deliver HTML Files](https://scotch.io/tutorials/use-expressjs-to-deliver-html-files)
 
+*General info on SQL Queries (e.g Updates) : [w3Schools](http://www.w3schools.com/sql/sql_update.asp)
 
-###Datasets used:
+*General info on RESTful APIs : [Scotch.io](https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4)
+
+*Plugin for testing API : [HttpRequester](https://addons.mozilla.org/en-us/firefox/addon/httprequester/)
+
+#####Datasets used:
 
 [EHA04: Annual Earnings and Other Labour Costs for All Employees by Industry Sector NACE Rev 2, Year and Statistic] (http://www.cso.ie/px/pxeirestat/Database/eirestat/EHECS%20Earnings%20Hours%20and%20Employment%20Costs%20Survey%20Annual/EHECS%20Earnings%20Hours%20and%20Employment%20Costs%20Survey%20Annual_statbank.asp?SP=EHECS%20Earnings%20Hours%20and%20Employment%20Costs%20Survey%20Annual&Planguage=0)
 
