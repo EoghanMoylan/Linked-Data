@@ -36,6 +36,20 @@ Updating data (PUT):
 >localhost:8000/updateCrime/id of crime/year of crime/occurences
 >localhost:8000/deleteEarning/id of earning/year of earning/ammount earned
 
+*Examples:*
+
+* localhost:8000/updateCrime/85/2009/8
+
+* localhost:8000/newCrimeEntry/murder/Galway/2012/8
+
+(*note that these require a tool such as HttpRequester or cURL in order to work. These cannot be entered into your browser.*)
+
+* localhost:8000/crimeById/85
+
+* localhost:8000/compareSectorAndStation/Arts/Carna/2009/Theft
+
+(*note that as these are GET methods they will return a JSON file if entered into your browser.*)
+
 ##Datasets
 ***Datasets were taken from CSO.ie in CSV format and converted into JSON. Links to originals are at bottom of the README.***
 
@@ -43,7 +57,28 @@ The CrimeRates dataset used contains data listing all crimes reported in all Gar
 The second dataset used, the AnnualEarnings dataset, list a sum of all earnings in various sectors through the years of 2008 to 2014. This dataset also lists the type of earning.
 
 
-
+##Code Examples
+Below are some code snippets for a few of the URLs listed above.
+```javascript
+//join by year , sector, crime area and crime
+app.get('/compareSectorAndStation/:sector/:crimeArea/:yearStr/:crimeType', function (req, res)
+{
+    db.all("SELECT crimeRates.id as CrimeID, annualEarnings.id as EarningID, crimeRates.Crime as Crimes, crimeRates.Y"+req.params.yearStr+" AS numberofattempts, annualEarnings.Y"+req.params.yearStr+" as Earnings , annualEarnings.EarningType as Type, crimeRates.GardaStation as GardaStations, annualEarnings.Sector as Sector FROM crimeRates INNER JOIN annualEarnings WHERE crimeRates.GardaStation LIKE \"%"+req.params.crimeArea+"%\" AND annualEarnings.Sector LIKE \"%"+req.params.sector+"%\"AND crimeRates.Crime LIKE \"%"+req.params.crimeType+"%\"  ", function(err,row)
+    {
+        var rowString2 = JSON.stringify(row, null, '\t');
+        res.sendStatus(rowString2);
+        
+    });
+});
+//Simple new entry into crime database
+app.post('/newCrimeEntry/:type/:station/:year/:amount', function (req, res)
+{
+    db.all("INSERT INTO crimeRates(Crime , GardaStation , Y"+req.params.year+") VALUES (\""+req.params.type+"\" , \""+req.params.station+"\" , "+req.params.amount+")", function(err,row)
+    {
+        res.sendStatus("New Entry has been added.");
+    });
+});
+```
 
 
 ###Datasets used:
