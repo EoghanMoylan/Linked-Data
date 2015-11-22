@@ -101,7 +101,7 @@ app.get('/compareSectorAndStation/:sector/:crimeArea/:yearStr/:crimeType', funct
     });
 });
 //Simple new entry into crime database
-app.get('/newCrimeEntry/:type/:station/:year/:amount', function (req, res)
+app.post('/newCrimeEntry/:type/:station/:year/:amount', function (req, res)
 {
     db.all("INSERT INTO crimeRates(Crime , GardaStation , Y"+req.params.year+") VALUES (\""+req.params.type+"\" , \""+req.params.station+"\" , "+req.params.amount+")", function(err,row)
     {
@@ -113,7 +113,7 @@ app.get('/newCrimeEntry/:type/:station/:year/:amount', function (req, res)
     });
 });
 //Simple new entry into crime database
-app.get('/newEarningEntry/:sector/:type/:year/:amount', function (req, res)
+app.post('/newEarningEntry/:sector/:type/:year/:amount', function (req, res)
 {
     db.all("INSERT INTO annualEarnings(Sector , EarningType , Y"+req.params.year+") VALUES (\""+req.params.sector+"\" , \""+req.params.type+"\" , "+req.params.amount+")", function(err,row)
     {
@@ -125,18 +125,18 @@ app.get('/newEarningEntry/:sector/:type/:year/:amount', function (req, res)
     });
 });
 //Simple new entry into crime database
-app.get('/deleteEarning/:id', function (req, res)
+app.delete('/deleteEarning/:id', function (req, res)
 {
     db.all("DELETE FROM annualEarnings WHERE id="+req.params.id+"", function(err,row)
     {
-        res.sendStatus("Earning with ID " + req.params.id + "has been deleted.");
+        res.sendStatus("Earning with ID " + req.params.id + " has been deleted.");
     });
 });
-app.get('/deleteCrime/:id', function (req, res)
+app.delete('/deleteCrime/:id', function (req, res)
 {
     db.all("DELETE FROM crimeRates WHERE id="+req.params.id+"", function(err,row)
     {
-        res.sendStatus("Crime with ID " + req.params.id + "has been deleted.");
+        res.sendStatus("Crime with ID " + req.params.id + " has been deleted.");
     });
 });
 // Start the server.
